@@ -17,7 +17,6 @@ if (location === 'RSA') {
     const calcShipping = 400;    /* couldn't reassign new values to shipping and currency outside the block-scope */
     const newCurrency = 'R';    /* renamed variables to avoid block-scope syntax error */
     shipping = calcShipping;     /* used new variables as new values of the original variables given */
-    location = 'RSA';           /* Reassign location variable */
     currency = newCurrency;     /* used camelCase */
 }
 
