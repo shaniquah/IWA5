@@ -5,7 +5,7 @@ const BANNED_WARNING = 'Unfortunately we do not ship to your country of residenc
 const NONE_SELECTED = 0; /* value should be numerical---cannot multiply later with a string */
 
 // moved code closer to beginning of code and declared variables
-const customers = 1; /* customers should be recorded in numericals not stored as a string */
+let customers = 1; /* customers should be recorded in numerals not stored as a string */
 let location = 'RSA';
 let currency = null;
 let shipping = null;
@@ -17,6 +17,7 @@ if (location === 'RSA') {
     const calcShipping = 400;    /* couldn't reassign new values to shipping and currency outside the block-scope */
     const newCurrency = 'R';    /* renamed variables to avoid block-scope syntax error */
     shipping = calcShipping;     /* used new variables as new values of the original variables given */
+    location = 'RSA';           /* Reassign location variable */
     currency = newCurrency;     /* used camelCase */
 }
 
